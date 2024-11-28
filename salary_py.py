@@ -27,7 +27,7 @@ def main():
     gender = st.selectbox("Gender", options=["Male", "Female"])
     education = st.selectbox("Education Level", options=["High School", "Bachelor's", "Master's", "PhD"])
     job_title = st.text_input("Job Title")
-    experience = st.number_input("Years of Experience", min_value=0, max_value=50, step=1, format="%d")
+    experience = st.number_input("Years of Experience", min_value=0, max_value=40, step=1, format="%d")
 
     if st.button("Predict Salary"):
         try:
